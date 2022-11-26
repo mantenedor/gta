@@ -23,7 +23,7 @@ function BUILD {
         docker compose up -d
         echo ""
 	docker ps
-	docker exec -it gta /bin/bash /opt/scripts/build.sh
+	#docker exec -it gta /bin/bash /opt/scripts/build.sh
 	#docker exec -it gta /bin/bash /opt/scripts/2-start.sh
 	echo ""
         echo 'Acrescente "&& docker logs '$CONTAINER_NAME' -f" para ver os logs em tempo de execução.'
