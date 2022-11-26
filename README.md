@@ -8,7 +8,7 @@ git clone https://github.com/mantenedor/gta.git
 ```
 Gere uma chave para seu servidor em: https://keymaster.fivem.net/
 
-Crie o arquivo ".keymaster" contendo a sua chave no diretório "./fivem/":
+Crie o arquivo ".keymaster" contendo a sua chave no diretório "fivem":
 ```
 cd gta && echo "chaveMuitoL0kaGeradaNoSiteFIVEM" > fivem/.keymaster
 ```
