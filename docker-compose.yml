@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+
+  os:
+    #image: debian:latest
+    image: fivem
+    container_name: gta
+    build: ./
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t  
+    restart: always
+    networks:
+      - gta
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    ports:
+      - 30120:30120/tcp
+      - 30120:30120/udp
+      - 40120:40120/tcp
+      - 40120:40120/udp
+    volumes:
+      - ./fivem:/opt/fivem
+
+networks:
+  gta:
+    driver: bridge
