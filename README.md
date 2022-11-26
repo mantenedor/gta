@@ -10,10 +10,10 @@ Gere uma chave para seu servidor em: https://keymaster.fivem.net/
 
 Crie o arquivo ".keymaster" contendo a sua chave no diretório "fivem":
 ```
-cd gta && echo "chaveMuitoL0kaGeradaNoSiteFIVEM" > fivem/.keymaster
+echo "chaveMuitoL0kaGeradaNoSiteFIVEM" > gta/.keymaster
 ```
 Execute o script de instalação:
 ```
-cd scripts && ./server.sh --build
+cd gta/scripts && ./server.sh --build
 ```
 Pronto. Seu servidor está rodando na porta 30120
