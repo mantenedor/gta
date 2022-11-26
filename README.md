@@ -4,7 +4,7 @@ Instalação mínima de um servidor fivem
 
 Baixe o projeto:
 ```
-clone https://github.com/mantenedor/gta.git
+git clone https://github.com/mantenedor/gta.git
 ```
 Gere uma chave para seu servidor em: https://keymaster.fivem.net/
 
