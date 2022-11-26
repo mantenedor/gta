@@ -7,7 +7,7 @@
 # Referência: https://docs.fivem.net/docs/server-manual/setting-up-a-server-vanilla/#linux
 #
 
-KEYMASTER=`cat ../fivem/.keymaster`
+KEYMASTER=`cat ../.keymaster`
 MASTER="https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master"
 CFX="https://github.com/citizenfx/cfx-server-data.git"
 FILE=`curl -qs https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/ | grep "LATEST RECOMMENDED" -B1 | head -n1 | cut -d'"' -f2 | cut -d'/' -f2-3`
