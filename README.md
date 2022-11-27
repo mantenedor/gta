@@ -6,9 +6,9 @@ Neste caso, eu optei por utilizar um servidor Linux e container.
 
 [![Watch the video](https://img.youtube.com/vi/kwy48L_lFSc/maxresdefault.jpg)](https://youtu.be/kwy48L_lFSc)
 
-FIVEM: https://fivem.net/
-Docker: https://docs.docker.com/engine/install/debian/
-Debian: https://hub.docker.com/_/debian
+* FIVEM: https://fivem.net/
+* Docker: https://docs.docker.com/engine/install/debian/
+* Debian: https://hub.docker.com/_/debian
 
 ## Estrutura
 ```
