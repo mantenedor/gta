@@ -29,7 +29,7 @@ Neste caso, eu optei por utilizar um servidor Linux e container.
 
 1. Baixe o projeto:
 ```
-git clone https://github.com/mantenedor/gta.git
+git clone --branch custom-scripts https://github.com/mantenedor/gta.git
 ```
 2. Gere uma chave para seu servidor em: https://keymaster.fivem.net/
 
@@ -41,4 +41,31 @@ echo "chaveMuitoL0kaGeradaNoSiteFIVEM" > gta/.keymaster
 ```
 cd gta/scripts && ./server.sh --build
 ```
-Pronto. Seu servidor está rodando na porta 30120
+5. Instale seus scripts:
+```
+cd gta/fivem/essenciais/resources/
+ln -s ../../custom/ [custom]
+```
+6. carregue seus scripts:
+```
+vim gta/fivem/essenciais/server.cfg
+```
+O caomando "ensure" invoca os scripts. Insira o comando seguido do nome do diretório do seu script: 
+```
+...
+# CUSTOM
+ensure carros
+ensure help
+ensure spawns
+...
+```
+7. Reinicie o container:
+```
+docker restart gta
+````
+8. Inicie o fivem:
+```
+docker exec -it gta /bin/bash /opt/scripts/2-start.sh
+```
+
+Pronto. Seu servidor, juntamente com seus scripts, estão rodando na porta 30120
