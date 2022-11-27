@@ -1,6 +1,6 @@
 # GTA V FIVEM
 
-Se você pretende montar um servidor de GTA RP, explorar o conceito de metaverso ou criar sua próprias bibliotecas, você precisará realizar este deploy inicial, antes de começar os eu trabalho.
+Se você pretende montar um servidor de GTA RP, explorar o conceito de metaverso ou criar sua próprias bibliotecas, você precisará realizar este deploy inicial, antes de começar o seu trabalho.
 
 Neste caso, eu optei por utilizar um servidor Linux e container.
 
