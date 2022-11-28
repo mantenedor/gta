@@ -2,7 +2,13 @@
 
 Se você pretende montar um servidor de GTA RP, explorar o conceito de metaverso ou criar sua próprias bibliotecas, você precisará realizar este deploy inicial, antes de começar o seu trabalho.
 
-Neste caso, eu optei por utilizar um servidor Linux e container.
+Com seu servidor rodadndo, você precisará organizar seus scripts numa estrutura de diretórios.
+
+E recomendável que você exponha esses disrtórios como volume, quando está utilizando containers.
+
+Neste ramo, eu criei o diretório "../fivem/custom", contendo 3 scripts de teste, e também criei um link simbólico em "../fivem/esesciais/resource".
+
+Crie novos diretórios e linkd simbólicos para orgnizar o seu projeto.
 
 [![Watch the video](https://img.youtube.com/vi/kwy48L_lFSc/maxresdefault.jpg)](https://youtu.be/kwy48L_lFSc)
 
@@ -60,7 +66,7 @@ ln -s ../../custom/ [custom]
 ```
 vim gta/fivem/essenciais/server.cfg
 ```
-O caomando "ensure" invoca os scripts. Insira o comando seguido do nome do diretório do seu script: 
+O comando "ensure" invoca os scripts. Insira o comando seguido do nome do diretório do seu script: 
 ```
 ...
 # CUSTOM
