@@ -16,7 +16,17 @@ Neste caso, eu optei por utilizar um servidor Linux e container.
 ├── docker-compose.yml
 ├── Dockerfile
 ├── fivem
+│   ├── custom
+│   │   ├── carros
+│   │   ├── help
+│   │   └── spawns
 │   ├── essenciais
+│   │   ├── alpine
+│   │   ├── cache
+│   │   ├── README.md
+│   │   ├── resources
+│   │   ├── run.sh
+│   │   └── server.cfg
 │   └── server.default
 ├── README.md
 └── scripts
