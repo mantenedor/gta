@@ -4,7 +4,7 @@ Se você pretende montar um servidor de GTA RP, explorar o conceito de metaverso
 
 Com seu servidor rodadndo, você precisará organizar seus scripts numa estrutura de diretórios.
 
-E recomendável que você exponha esses disrtórios como volume, quando está utilizando containers.
+E recomendável que você exponha esses diretórios como volume, quando estestiver trabalhando com containers. Isso garantirá a persistência dos arquivos e facilitará a manutenção do código.
 
 Neste ramo, eu criei o diretório "../fivem/custom", contendo 3 scripts de teste, e também criei um link simbólico em "../fivem/esesciais/resource".
 
