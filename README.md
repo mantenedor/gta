@@ -63,7 +63,7 @@ cd ../fivem/essentials/resources/ && ln -s ../../custom/ [custom]
 ```
 6. carregue seus scripts:
 ```
-vim gta/fivem/essentials/server.cfg
+vim ../server.cfg
 ```
 O comando "ensure" invoca os scripts. Insira o comando seguido do nome do diretório do seu script: 
 ```
