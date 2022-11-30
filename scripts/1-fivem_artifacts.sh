@@ -12,9 +12,14 @@ MASTER="https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master"
 CFX="https://github.com/citizenfx/cfx-server-data.git"
 FILE=`curl -qs https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/ | grep "LATEST RECOMMENDED" -B1 | head -n1 | cut -d'"' -f2 | cut -d'/' -f2-3`
 ARTIFACTS="../fivem/essentials"
+CUSTOM="../fivem/custom"
 
 if [ ! -d "$ARTIFACTS" ];then
 	mkdir $ARTIFACTS
+fi
+
+if [ ! -d "$CUSTOM" ];then
+	mkdir $CUSTOM
 fi
 
 function GET {
