@@ -11,7 +11,11 @@ KEYMASTER=`cat ../.keymaster`
 MASTER="https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master"
 CFX="https://github.com/citizenfx/cfx-server-data.git"
 FILE=`curl -qs https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/ | grep "LATEST RECOMMENDED" -B1 | head -n1 | cut -d'"' -f2 | cut -d'/' -f2-3`
-ARTIFACTS="../fivem/essenciais"
+ARTIFACTS="../fivem/essentials"
+
+if [ ! -d "$ARTIFACTS" ];then
+	mkdir $ARTIFACTS
+fi
 
 function GET {
 	wget $MASTER/$FILE -P $ARTIFACTS
