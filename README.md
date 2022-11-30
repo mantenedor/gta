@@ -59,8 +59,7 @@ cd gta/scripts && ./server.sh --build
 ```
 5. Instale seus scripts:
 ```
-cd gta/fivem/essenciais/resources/
-ln -s ../../custom/ [custom]
+cd gta/fivem/essenciais/resources/ && ln -s ../../custom/ [custom]
 ```
 6. carregue seus scripts:
 ```
