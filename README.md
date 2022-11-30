@@ -59,11 +59,11 @@ cd gta/scripts && ./server.sh --build
 ```
 5. Instale seus scripts:
 ```
-cd ../fivem/essentials/resources/ && ln -s ../../custom/ [custom]
+cd gta/fivem/essenciais/resources/ && ln -s ../../custom/ [custom]
 ```
 6. carregue seus scripts:
 ```
-vim ../server.cfg
+vim gta/fivem/essenciais/server.cfg
 ```
 O comando "ensure" invoca os scripts. Insira o comando seguido do nome do diretório do seu script: 
 ```

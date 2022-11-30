@@ -22,6 +22,44 @@ services:
       - 40120:40120/udp
     volumes:
       - ./fivem:/opt/fivem
+  web:
+    image: web
+    container_name: web
+    build: ./web
+    restart: always
+    ports:
+    - 80:80
+    - 443:443
+    volumes:
+      - ./web/html:/usr/local/apache2/htdocs
+      - ./web/conf:/usr/local/apache2/conf
+      #- httpdconf:/usr/local/apache2/conf
+      #- httpdhtml:/usr/local/apache2/htdocs  
+    networks:
+      - gta
+  db:
+    image: mysql
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_USER: vrp
+      MYSQL_PASSWORD: scatman
+      MYSQL_DATABASE: vrp
+      MYSQL_ROOT_PASSWORD: scatman
+    ports:
+    - 3306:3306/tcp
+    - 3306:3306/udp
+    volumes:
+      - mysqletc:/etc
+      - mysqlvar:/var
+    networks:
+      - gta
+
+volumes:
+  mysqletc:
+  mysqlvar:
+  httpdconf:
+  httpdhtml:
 
 networks:
   gta:
